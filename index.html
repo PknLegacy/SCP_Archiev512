@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCP Facility 512 Archive</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="loader" class="loader">Establishing secure connection to Foundation-512...</div>
+
+    <div id="login-screen" class="login-screen">
+        <h1>SCP Facility-512 Archive</h1>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Access Archive</button>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <header>
+            <h1>SCP Archive Terminal</h1>
+            <input type="text" id="search" placeholder="Search SCP Files..." onkeyup="filterFiles()">
+        </header>
+        <div class="archive-list" id="archive-list">
+            <!-- Example entries -->
+        </div>
+    </div>
+
+    <audio id="access-granted" src="sounds/access_granted.mp3" preload="auto"></audio>
+    <audio id="access-denied" src="sounds/access_denied.mp3" preload="auto"></audio>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

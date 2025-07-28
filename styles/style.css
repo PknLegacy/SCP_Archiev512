@@ -1,0 +1,68 @@
+
+body {
+    background-color: #111;
+    color: #f2f2f2;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.loader {
+    color: red;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.login-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #222;
+    color: white;
+    border: 1px solid #555;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 1rem;
+}
+
+.archive-list {
+    padding: 1rem;
+}
+
+.archive-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.locked {
+    opacity: 0.4;
+    pointer-events: none;
+}
