@@ -1,0 +1,10 @@
+
+{
+  "id": "SCP-173",
+  "title": "The Sculpture",
+  "class": "Euclid",
+  "location": "Site-19",
+  "origin": "Unknown",
+  "properties": "Cannot move while within a direct line of sight.",
+  "description": "SCP-173 is a statue-like entity that moves extremely fast and breaks necks when not observed directly."
+}

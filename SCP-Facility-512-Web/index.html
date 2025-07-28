@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SCP-Facility-512 Archivement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loginBox" class="container">
+    <h1>SCP-Facility-512 Archivement</h1>
+    <p>Access restricted to authorized personnel only.</p>
+    <input type="text" id="usernameInput" placeholder="Username">
+    <input type="password" id="passwordInput" placeholder="Password">
+    <br>
+    <button onclick="login()">Login</button>
+    <p id="loginStatus"></p>
+  </div>
+
+  <div id="mainInterface" class="container" style="display: none;">
+    <h2>Access Granted</h2>
+    <p>Select a protocol file:</p>
+    <button onclick="loadFile('scp-data/SCP-049.json')">SCP-049</button>
+    <button onclick="loadFile('scp-data/SCP-173.json')">SCP-173</button>
+    <button onclick="loadFile('scp-data/SCP-999.json')">SCP-999</button>
+
+    <div id="loader" class="loader" style="display: none;"></div>
+    <div id="fileOutput" class="output"></div>
+  </div>
+
+  <audio id="loginSound" src="sounds/access_granted.mp3" preload="auto"></audio>
+  <audio id="failSound" src="sounds/access_denied.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
